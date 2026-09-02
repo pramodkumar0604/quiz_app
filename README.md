@@ -1,59 +1,51 @@
-# QuizWeb
+# 🎯 Quiz App - Angular & Spring Boot
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.22.
+A full-stack Quiz Management System. Admin can create tests, add questions, and view results. Users can take quizzes and check their scores instantly.
 
-## Development server
+### 🔗 Repository
+https://github.com/pramodkumar0604/quiz_app
 
-To start a local development server, run:
+### ✨ Key Features
 
+**Admin Module:**
+- Admin Authentication (JWT)
+- Create & Manage Tests
+- Add / Delete Questions with Options
+- View All User Results
+- Dashboard with Stats
+
+**User Module:**
+- User Registration & Login
+- View Available Quizzes
+- Take Test with Timer
+- Instant Result Calculation
+- View Previous Test History
+
+### 🛠️ Tech Stack
+- **Frontend:** Angular 17, TypeScript, NG-ZORRO Ant Design, SCSS
+- **Backend:** Spring Boot, Java, Spring Security, JWT
+- **Database:** MySQL
+- **Build Tool:** Angular CLI, Maven
+
+### 🔑 Demo Login (Frontend Mock Mode)
+
+Backend is not deployed, so frontend runs in mock mode for demo purpose. You can login with any password.
+
+**Admin Login:**
+> Email: `admin@gmail.com`
+> Password: `12345` (any password works)
+
+**User Login:**
+> Email: `user@gmail.com`
+> Password: `12345` (any password works)
+
+Logic: If email contains `admin` keyword, it will redirect to Admin Dashboard, otherwise to User Dashboard.
+
+### 🚀 How to Run This Project
+
+**Frontend Only (For Quick Demo):**
 ```bash
+git clone https://github.com/pramodkumar0604/quiz_app.git
+cd quiz_app
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
